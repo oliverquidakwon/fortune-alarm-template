@@ -1,0 +1,5 @@
+# Optional - install only to run the calculation check tool (tools/verify_with_de421.py, course chapter 4 lesson 3).
+# The daily alert (requirements.txt) does not need it. Install requirements.txt first, then this file.
+# Major upper bounds for the same reason as requirements.txt (lower bounds = versions this tool was run with).
+skyfield>=1.54,<2      # reads the NASA JPL ephemeris (DE421) and computes planet positions independently
+jplephem>=2.24,<3      # ephemeris file reader used by skyfield (the tool prints its version)

@@ -1,0 +1,6 @@
+# Every dependency has a major-version upper bound. Without one, a new major release can be installed
+# some morning, change call arguments, and silently stop the daily alert. Raise a bound only after a test run.
+anthropic>=0.40.0,<1   # Claude API
+ephem>=4.1,<5          # Western astrology transits (astronomical ephemeris, no data file needed)
+PyYAML>=6.0,<7         # reads me.yaml
+pytest>=8,<10          # regression tests that run before every send
